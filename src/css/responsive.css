@@ -1,0 +1,27 @@
+@media (max-width: 576px) {
+    .card {
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .card .product-image img {
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .card .product-info .product-title {
+        margin-right: 0;
+    }
+
+    .card .product-info .product-description {
+        margin-right: 3rem;
+    }
+
+    .card .product-info .btn-add-to-cart {
+        width: 30rem;
+        margin-bottom: 2rem;
+    }
+}

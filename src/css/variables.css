@@ -1,0 +1,8 @@
+:root {
+    --btn-and-current-price-color: hsl(158, 36%, 37%);
+    --background-color: hsl(30, 38%, 92%);
+    --product-title-color: hsl(212, 21%, 14%);
+    --paragraph-color: hsl(228, 12%, 48%);
+    --card-color: hsl(0, 0%, 100%);
+    --hover-color: hsl(157, 46%, 17%);
+}

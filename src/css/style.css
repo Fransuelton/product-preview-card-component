@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    width: 630px;
+}
+
+.card .product-image img {
+    border-top-left-radius: 1rem;
+    border-end-start-radius: 1rem;
+    width: 300px;
+}
+
+.card .product-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5rem;
+    gap: 2rem;
+}
+
+.card .product-info .preview-text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--paragraph-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.card .product-info .product-title {
+    font-family: 'Fraunces', serif;
+    color: var(--product-title-color);
+    font-size: 3rem;
+    margin-right: 8rem;
+}
+
+.card .product-info .product-description {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--paragraph-color);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-right: 8rem;
+}
+
+.card .product-info .product-price {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card .product-info .product-price .current-price {
+    font-family: 'Fraunces', serif;
+    color: var(--btn-and-current-price-color);
+    font-size: 3rem;
+}
+
+.card .product-info .product-price .old-price {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
+
+.card .product-info .btn-add-to-cart {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    background-color: var(--btn-and-current-price-color);
+    display: flex;
+    width: 25rem;
+    height: 5rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.card .product-info .btn-add-to-cart::before {
+    content: url(../images/icon-cart.svg);
+}
+
+.card .product-info .btn-add-to-cart:hover {
+    background-color: var(--hover-color);
+}
